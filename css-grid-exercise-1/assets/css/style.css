@@ -1,0 +1,73 @@
+  .libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 40px;
+    font-family: 'Open Sans', 'sans-serif';
+    background-image: linear-gradient(#CC5500,#FFA500);
+    color: #444;
+  }
+  
+  h1, p {
+    margin: 0 0 1em 0;
+  }
+  
+  .wrapper {
+    max-width: 940px;
+    margin: 0 20px;
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  
+  @media screen and (min-width: 500px) {
+  
+    .sidebar {
+      float: left;
+      width: 19.1489%;
+    }
+    
+    div .art-1 {
+        float: right;
+        width: 79.7872%;
+    }
+    div .art-2 {
+        float: right;
+        width: 79.7872%;
+    }
+  
+    .content {
+      float: right;
+      width: 79.7872%;
+    }
+  
+    .wrapper {
+      margin: 0 auto;
+      grid-template-columns: 1.5fr 3fr;
+    }
+    
+    .header, .footer {
+      grid-column: 1 / -1;
+      clear: both;
+    }
+  
+  }
+  
+  .wrapper > * {
+    background-color: #964B00;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    margin-bottom: 10px;
+  }
+  
+  @supports (display: grid) {
+    .wrapper > * {
+      width: auto;
+      margin: 0;
+    }
+  }

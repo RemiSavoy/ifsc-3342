@@ -14,8 +14,7 @@ body {
 }
 #container {
 	max-width: 800px;
-	margin-right: auto;
-	margin-left: auto;
+	margin:auto;
 	text-align: left;
 	background-color: #FFF;
 	margin-top: 20px;
